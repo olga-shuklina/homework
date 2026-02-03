@@ -1,4 +1,5 @@
 
+import PostCard from "../../entities/post/ui/PostCard";
 const ListItem =
         
             [{id:1, url:'post1', name:'Post 1'},
@@ -13,10 +14,13 @@ function PostList() {
     <header>
         <h3>Post List</h3>
         <ul>
-            {ListItem.map(item => ( <li key={item.url}>
-                {item.name}
-                </li>         
+   {ListItem.map(item => (
+               <li>
+                <PostCard id={item.id} name={item.name} url={item.url}/>
+                </li> 
+                     
             ))}
+       
         </ul>
     </header>
   );
