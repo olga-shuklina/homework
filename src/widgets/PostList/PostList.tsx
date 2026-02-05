@@ -15,9 +15,9 @@ function PostList() {
         <h3>Post List</h3>
         <ul>
    {ListItem.map(item => (
-               <li>
+               
                 <PostCard id={item.id} name={item.name} url={item.url}/>
-                </li> 
+                
                      
             ))}
        

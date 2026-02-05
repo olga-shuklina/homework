@@ -1,0 +1,20 @@
+:root {
+  /* light theme tokens */
+  --background-primary-light: 255, 182, 193;
+  --accent-light: 135, 147, 1;
+
+  /* dark theme tokens */
+  --background-primary-dark: 2, 55, 153;
+  --accent-dark: 106, 90, 205;
+}
+
+/* map tokens to proper theme */
+[data-theme='light'] {
+  --background-primary: var(--background-primary-light);
+  --accent: var(--accent-light);
+}
+
+[data-theme='dark'] {
+  --background-primary: var(--background-primary-dark);
+  --accent: var(--accent-dark);
+}

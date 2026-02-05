@@ -1,0 +1,8 @@
+.dark {
+ color: rgb(var(--accent));
+  background-color: rgba(var(--background-primary), 0.5);
+}
+.light {
+  color: rgb(var(--accent));
+  background-color: rgba(var(--background-primary), 0.5);
+} 
